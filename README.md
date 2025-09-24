@@ -64,6 +64,8 @@ Modular Design: Organized with Flask Blueprints (auth, files), utility modules (
 # Next Steps
 The immediate next steps include developing a React-based frontend for a user-friendly interface, integrating WebDAV support using the wsgidav library for cross-device file syncing, and implementing file versioning to allow rollback of changes. Additionally, transitioning file storage to AWS S3 will enhance scalability, while adding multi-factor authentication and rate limiting with flask-limiter will bolster security.
 
+Long term the idea is to create a self hosted cloud drive-like service that also incorporates Docusign-like document verification through a more advanced cyrptographic hash. 
+
 
 
 ...
