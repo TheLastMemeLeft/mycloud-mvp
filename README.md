@@ -1,5 +1,5 @@
 # MyCloud
-MyCloud is a secure, self-hosted file storage system built from scratch as a lightweight alternative to OwnCloud. It features AES-256 encryption, SHA-256 hashing for file integrity, and time-limited file sharing, all powered by Python and Flask. Below is an example of interacting with the API to upload a file, compute its hash, and share it securely:Example API Usage (via cURL)  bash
+MyCloud is a secure, self-hosted file storage system built from scratch as a lightweight alternative to OwnCloud. It features AES-256 encryption, SHA-256 hashing for file integrity, and time-limited file sharing, all powered by Python and Flask. Below is an example of interacting with the API to upload a file, compute its hash, and share it securely
 
 # Register a user
 curl -X POST http://localhost:5000/auth/register \
