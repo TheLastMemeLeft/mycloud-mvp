@@ -3,7 +3,12 @@
 
 # Secure File Storage
 
-A self-hosted file storage system with encryption, hashing, and sharing, built with Flask.
+MyCloud is a lightweight alternative to OwnCloud, featuring a RESTful API for user authentication via JWT and PBKDF2-hashed passwords, file uploads with AES-256 encryption and SHA-256 hashing for integrity verification, and time-limited file sharing through UUID-based links. The backend uses SQLAlchemy for SQLite database management, Flask Blueprints for organized routes (auth and files), and utility modules for encryption and hashing, ensuring scalability and maintainability. For example, on upload, files are encrypted with a unique key stored in the database, hashed for tamper detection, and saved locally, with verification available via a dedicated endpoint.
+
+This project offers significant cost savings across industries by providing a free, self-hosted alternative to SaaS platforms. Small businesses like startups or retail operations can store and share internal documents without Dropbox subscriptions, potentially saving $100–$500 annually per user by hosting on low-cost VPS servers. Law firms benefit from secure document handling with hash-based verification for legal compliance, avoiding DocuSign's per-signature fees and reducing expenses by thousands while maintaining control over sensitive client data. Freelancers, such as designers or consultants, can use it for client file sharing instead of premium WeTransfer plans, cutting monthly costs of $10–$30. Nonprofits and educational institutions can manage records or research data affordably, ensuring privacy without enterprise cloud bills, and even integrating it for collaborative workflows to minimize IT overhead.
+
+While MyCloud is a functional MVP, it's still a work in progress. My vision is to evolve it into a comprehensive self-hosted cloud storage solution like OwnCloud, enhanced with cryptographic hashing for document verification, making it a secure, non-SaaS alternative to DocuSign. This would empower users to avoid recurring fees, saving money for individuals and organizations through features like WebDAV syncing, file versioning, and a React frontend.
+
 
 ## Features
 - User authentication (register/login) with JWT.
